@@ -1,11 +1,13 @@
-def chinh():
+import random
+def main():
   print("Keep it logically awesome.")
+  last = 13
+  rnd = random.randint(0, last)
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+  print(quotes[rnd])
 
-  #print(quotes)
-
-  if __main__== "__main__":
-      chinh()
+#if __main__== "__main__":
+main()
